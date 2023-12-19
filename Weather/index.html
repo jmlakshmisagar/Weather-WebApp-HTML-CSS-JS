@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Notifier</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Weather.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="page">
+        <div class="page-grid">
+            <div class="search">
+                <div class="search-items">
+                    <div class="input"><input type="text" placeholder="Search city here"></div>
+                    <div class="btn"><img src="search.png" alt="search"></div>
+                </div>
+            </div>
+            <div class="info">
+                <img src="Weather.png" width="165px" class="WeatherIcon up-down">
+                <h1 class="temp">25&deg;c</h1>
+                <h2 class="city">Your City</h2>
+            </div>
+            <div class="humi-wind">
+                <div class="items-humidity-weather">
+                    <div class="humidity">
+                        <img src="humidity.png" width="50px">
+                        <h4 class="humidity1">50%</h4>
+                    </div>
+                    <div class="wind">
+                        <img src="wind.png" width="50px">
+                        <h4 class="wind1">25 km/h</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Kanit', sans-serif;
+}
+body{
+    background: linear-gradient(#d5e5f3, 30%, #19747E) fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.page{
+    width: 380px;
+    height: px;
+    background: linear-gradient(#58bdde, 30%, #0b555d) fixed;
+    border-radius: 30px;
+}
+.page-grid{
+    display: grid;
+    grid-template-rows: 100px 300px 150px;
+    grid-template-areas: 
+    "search"
+    "info"
+    "humidity";
+    gap: 5px; 
+}
+.search{
+    grid-area: search;
+}
+.search-items{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.search-items .input{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    background-color: #ffffffe7;
+    height: 40px;
+    border-radius: 20px;
+}
+.input input{
+    border: none;
+    outline: none;
+    margin-left: 20px;
+    background-color: transparent;
+    color: #212121;
+    font-size: 14px;
+    width: 100%;
+}
+.btn{
+    height: 40px;
+    background-color: #ffffffe7;
+    width: 10%;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn img{
+    width: 15px;
+}
+/* .btn:hover{
+    width: 11%;
+    height: 45px;
+    transition: all ease-in 1s;
+} */
+.info{
+    grid-area: info;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #ffffffe7;
+}
+.info h1{
+    font-size: 3.5rem;
+}
+.info h2{
+    font-size: 2rem;
+}
+.humid-wind{
+    grid-area: humidity;
+}
+.items-humidity-weather{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    color: #ffffffe7;
+}
+.humidity{
+    display: flex;
+}
+.wind{
+    display: flex;
+    align-items: center;
+}
+.humidity h4{
+    margin-left: 10px;
+    font-size: 25px;
+}
+.wind h4{
+    margin-left: 10px;
+    font-size: 24px;
+}
+
+
+
+
+
+.up-down{
+    animation: up-down linear 4s;
+    animation-iteration-count: infinite;
+    transform-origin: 50% 50%;
+    -webkit-animation: up-down linear 4s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-transform-origin: 50% 50%;
+    -moz-animation: up-down linear 4s;
+    -moz-animation-iteration-count: infinite;
+    -moz-transform-origin: 50% 50%;
+    -o-animation: up-down linear 4s;
+    -o-animation-iteration-count: infinite;
+    -o-transform-origin: 50% 50%;
+    -ms-animation: up-down linear 4s;
+    -ms-animation-iteration-count: infinite;
+    -ms-transform-origin: 50% 50%;
+  }
+  
+  @keyframes up-down{
+    0% {
+      transform:  translate(1px,20px)  ;
+    }
+    24% {
+      transform:  translate(1px,30px)  ;
+    }
+    50% {
+      transform:  translate(1px,12px)  ;
+    }
+    74% {
+      transform:  translate(1px,22px)  ;
+    }
+    100% {
+      transform:  translate(1px,22px)  ;
+    }
+  }
+  
+  @-moz-keyframes up-down{
+    0% {
+      -moz-transform:  translate(1px,20px)  ;
+    }
+    24% {
+      -moz-transform:  translate(1px,30px)  ;
+    }
+    50% {
+      -moz-transform:  translate(1px,12px)  ;
+    }
+    74% {
+      -moz-transform:  translate(1px,22px)  ;
+    }
+    100% {
+      -moz-transform:  translate(1px,22px)  ;
+    }
+  }
+  
+  @-webkit-keyframes up-down {
+    0% {
+      -webkit-transform:  translate(1px,20px)  ;
+    }
+    24% {
+      -webkit-transform:  translate(1px,30px)  ;
+    }
+    50% {
+      -webkit-transform:  translate(1px,12px)  ;
+    }
+    74% {
+      -webkit-transform:  translate(1px,22px)  ;
+    }
+    100% {
+      -webkit-transform:  translate(1px,22px)  ;
+    }
+  }
+  
+  @-o-keyframes up-down {
+    0% {
+      -o-transform:  translate(1px,20px)  ;
+    }
+    24% {
+      -o-transform:  translate(1px,30px)  ;
+    }
+    50% {
+      -o-transform:  translate(1px,12px)  ;
+    }
+    74% {
+      -o-transform:  translate(1px,22px)  ;
+    }
+    100% {
+      -o-transform:  translate(1px,22px)  ;
+    }
+  }
+  
+  @-ms-keyframes up-down {
+    0% {
+      -ms-transform:  translate(1px,20px)  ;
+    }
+    24% {
+      -ms-transform:  translate(1px,30px)  ;
+    }
+    50% {
+      -ms-transform:  translate(1px,12px)  ;
+    }
+    74% {
+      -ms-transform:  translate(1px,22px)  ;
+    }
+    100% {
+      -ms-transform:  translate(1px,22px)  ;
+    }
+  }
